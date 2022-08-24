@@ -1,0 +1,1 @@
+import{r as s,h as t,H as o}from"./p-e85786ed.js";const r=class{constructor(t){s(this,t)}render(){return t(o,null,t("slot",null))}};r.style={app:":host{display:block}"};export{r as touching_button}

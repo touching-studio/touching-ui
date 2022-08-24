@@ -1,0 +1,1 @@
+import{p as t,b as o}from"./p-e85786ed.js";import"./p-87f71d67.js";(()=>{const o=import.meta.url,p={};return""!==o&&(p.resourcesUrl=new URL(".",o).href),t(p)})().then((t=>o([["p-5c8af545",[[33,"touching-button"]]]],t)));
