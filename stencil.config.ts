@@ -1,7 +1,9 @@
 import { Config } from '@stencil/core';
 
 export const config: Config = {
-  namespace: 'awesome-elements',
+  namespace: 'touching-ui',
+  globalScript: './src/globals/global.ts',
+  globalStyle: './src/globals/global.css',
   outputTargets: [
     {
       type: 'dist',
