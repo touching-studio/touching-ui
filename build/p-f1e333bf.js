@@ -1,0 +1,1 @@
+import{s as r}from"./p-7c25b549.js";r((r=>{for(;r;){const o=r.mode||r.getAttribute("mode");if(o)return o;r=r.parentElement}return"app"}));
