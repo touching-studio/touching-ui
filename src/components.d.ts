@@ -5,8 +5,21 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { ButtonVariant } from "./components/touching-button/touching-button";
 export namespace Components {
     interface TouchingButton {
+        /**
+          * The flag of disabling the button. Default to `false`.
+         */
+        "disabled": boolean;
+        /**
+          * If presents, the button would act like an `a` tag using the given `href`.
+         */
+        "href"?: string;
+        /**
+          * Variant of the button. Default to `solid`.
+         */
+        "variant": ButtonVariant;
     }
 }
 declare global {
@@ -22,6 +35,18 @@ declare global {
 }
 declare namespace LocalJSX {
     interface TouchingButton {
+        /**
+          * The flag of disabling the button. Default to `false`.
+         */
+        "disabled"?: boolean;
+        /**
+          * If presents, the button would act like an `a` tag using the given `href`.
+         */
+        "href"?: string;
+        /**
+          * Variant of the button. Default to `solid`.
+         */
+        "variant"?: ButtonVariant;
     }
     interface IntrinsicElements {
         "touching-button": TouchingButton;
