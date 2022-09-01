@@ -29,10 +29,11 @@ export class TouchingButton implements ComponentInterface {
   render() {
     return (
       <Host>
-        <div style={{ display: "flex", justifyContent: "center", cursor: "pointer" }}>
-          {this.href && <a href={this.href} style={{ position: "absolute", width: "100%" }}><br style={{ clean: "both" }}></br></a>}
-          <slot></slot>
-        </div>
+        <awesome-grid rows="1fr auto 1fr" columns="1fr auto 1fr">
+          <awesome-grid-item row={2} column={2}>
+            <slot></slot>
+          </awesome-grid-item>
+        </awesome-grid>
       </Host>
     );
   }

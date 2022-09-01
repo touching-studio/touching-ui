@@ -1,7 +1,11 @@
-:host {
-  display: block;
-}
+@import url(../../../utils/normalization.css);
 
 :host {
-  background-color: #1E90FF;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  margin:
 }
+
