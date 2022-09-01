@@ -1,38 +1,17 @@
-:root {
-  --touching-ui-color-primary: #3880ff;
-  --touching-ui-color-secondary: #3dc2ff;
-  --touching-ui-color-tertiary: #5260ff;
-  --touching-ui-color-main: #000000;
-  --touching-ui-color-contrast: #ffffff;
-  --touching-ui-color-dim: #808080;
-  --touching-ui-color-background: #ffffff;
+@import url(./global.app.css);
 
-  --touching-ui-border-radius-sm: 2px;
-  --touching-ui-border-radius-md: 5px;
-  --touching-ui-border-radius-lg: 10px;
-
-  --touching-ui-whitespace-sm: 0.25rem;
-  --touching-ui-whitespace-md: 0.5rem;
-  --touching-ui-whitespace-lg: 1rem;
-
-  --touching-ui-shadow-offset-xs: 1px;
-  --touching-ui-shadow-offset-sm: 2px;
-  --touching-ui-shadow-offset-md: 5px;
-  --touching-ui-shadow-offset-lg: 10px;
-
-  --touching-ui-shadow-blur-xs: 1px;
-  --touching-ui-shadow-blur-sm: 2px;
-  --touching-ui-shadow-blur-md: 5px;
-  --touching-ui-shadow-blur-lg: 10px;
-  --touching-ui-shadow-blur-xl: 25px;
-  --touching-ui-shadow-blur-xxl: 50px;
+body{
+  background: var(--touching-ui-default-color-background);
+  color: var(--touching-ui-default-color-main);
+  margin: 0;
 }
 
 :root {
   -webkit-tap-highlight-color: transparent;
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--touching-ui-color-main);
 }
+
+
 
 * {
   box-sizing: border-box;
