@@ -1,5 +1,5 @@
 import { Component, Host, h, ComponentInterface, Prop } from '@stencil/core';
-
+import { renderHrefHandler } from '../../../utils/href-handler';
 export type ButtonVariant = 'solid' | 'hollow' | 'clear' | 'round' | 'link';
 
 @Component({
@@ -29,6 +29,7 @@ export class TouchingButton implements ComponentInterface {
   render() {
     return (
       <Host>
+        {this.href && renderHrefHandler(this.href)}
         <awesome-grid rows="1fr auto 1fr" columns="1fr auto 1fr">
           <awesome-grid-item row={2} column={2}>
             <slot></slot>

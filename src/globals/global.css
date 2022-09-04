@@ -1,10 +1,11 @@
-@import url(./global.app.css);
 
 body{
   background: var(--touching-ui-default-color-background);
   color: var(--touching-ui-default-color-main);
   margin: 0;
 }
+
+@import url(./global.app.css);
 
 :root {
   -webkit-tap-highlight-color: transparent;

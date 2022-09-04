@@ -1,4 +1,5 @@
 @import url(../../../utils/normalization.css);
+@import url(../../globals/global.app.css);
 
 :host {
   -webkit-tap-highlight-color: transparent;
@@ -6,6 +7,23 @@
   position: relative;
   cursor: pointer;
   user-select: none;
-  margin:
+  margin: var(--touching-ui-app-whitespace-sm);
+  padding: var(--touching-ui-app-whitespace-md);
+  border-radius: var(--touching-ui-app-border-radius-md);
+  overflow: hidden;
+  /* transition: box-shadow 0.3s; */
 }
 
+:host([disabled]) {
+  pointer-events: none;
+  /* filter: contrast(0.6); */
+}
+
+:host([variant='round']) {
+  border-radius: 50%;
+
+}
+
+:host([variant='solid']) {
+  color: var(--touching-ui-app-color-secondary);
+}
